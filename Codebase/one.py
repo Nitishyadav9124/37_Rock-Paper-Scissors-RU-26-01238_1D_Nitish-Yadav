@@ -21,9 +21,8 @@ def play_game():
     player_score = 0
     computer_score = 0
     draws = 0
-
-    round_num =1
-    while round_num <=3:
+    
+    for round_num in range(1, 4):
         print(f"\n======Round {round_num}======")
         player_choice = input("Enter rock, paper or scissors:").strip().lower()
 
@@ -46,7 +45,7 @@ def play_game():
         else:
             draws +=1
 
-        round_num +=1
+        
 
 
 
